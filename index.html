@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bootcamp - Clase HTML</title>
+</head>
+<body>
+<h1>Contactanos</h1>
+
+<h2>Realice su consulta que, a la brevedad,<br>nos pondremos en contacto con usted para <br>responderle:</h2>
+    <form action="https://formsubmit.co/facundoerramuspe4@gmail.com" method="POST">
+        <input type="text" name="nombre_completo" placeholder="Nombre completo" maxlength="70" required>
+        
+        <input type="date" name="fecha_de_nacimiento" id="fecha" max="2024-05-09">
+
+        <input type="email" name="email" id="email" placeholder="Correo electronico" maxlength="50">
+  <div class="notificacion-label">
+    <label for="notificaciones">Recibir Informacion y Notificaciones</label>
+  </div>
+
+   <div>
+
+    <input type="checkbox" name="notificaciones" checked value="acepto" id="notificaciones">
+   </div>
+
+     <h3>Selecciona un Turno</h3>
+   <label for="turnoM">Mañana</label>
+   <input type="radio" name="turnom" id="turnoM" value="mañana">
+
+   <label for="turnoT">Tarde</label>
+   <input type="radio" name="turnot" id="turnoT" value="tarde">
+
+   <label for="turnoM">Noche</label>
+   <input type="radio" name="turnon" id="turnoN" value="noche">
+
+        <textarea name="comentarios" id="comentarios"placeholder="Comentarios, aquí (max. 500 caracteres)" maxlength="500"></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+    
+</body>
+</html>
